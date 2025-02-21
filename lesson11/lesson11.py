@@ -1,9 +1,7 @@
 # Lesson 11
 coords = input("enter coords\n")
 coords = coords.split()
-def cast(value):
-   return int(value)
-coords = list(map(cast, coords))
+coords = list(map(int, coords))
 if coords[0] == 0 or coords [1] == 0:
     print("not in a quadrant")
 elif coords[0] > 0:
