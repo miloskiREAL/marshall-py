@@ -1,6 +1,5 @@
 # Lesson 42
 def posSum(nums, target):
-    found = False
     if len(nums) == 1:
         if nums[0] == target:
             return True
