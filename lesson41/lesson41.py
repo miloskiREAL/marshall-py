@@ -10,9 +10,9 @@ points = {
 }
 def score(word):
     score = 0
-    for n in range(len(word)):
-        if word[n].isalpha():
-            score += points[word[n].upper()]
+    for char in word:
+        if char.isalpha():
+            score += points[char.upper()]
     if len(word) == 7:
         score += 50
     return score
